@@ -151,8 +151,8 @@ final public class ATLog {
                 delegate.log(level: level, log: log, tag: tag, message: message)
             }
         } else {
-            let tag = tag == nil ? "" : " \(tag ?? "")"
-            let head = "\(level.key_short).log" + tag
+            let ctag = tag == nil ? "" : " \(tag ?? "")"
+            let head = "\(level.key_short).log" + ctag
             let _message = message.replacingOccurrences(of: "\n", with: "\n" + head + " ").replacingOccurrences(of: "\r", with: "\r" + head + " ")
             let log = "\(time) \(head) \(_message)"
             _ATLogService.logCallback?(level, log, tag, message)
