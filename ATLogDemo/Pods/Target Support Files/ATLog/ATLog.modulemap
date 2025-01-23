@@ -1,0 +1,6 @@
+module ATLog {
+  umbrella header "ATLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

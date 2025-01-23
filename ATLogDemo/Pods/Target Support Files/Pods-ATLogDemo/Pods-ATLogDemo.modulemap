@@ -1,0 +1,6 @@
+module Pods_ATLogDemo {
+  umbrella header "Pods-ATLogDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

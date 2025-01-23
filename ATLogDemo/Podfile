@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+
+target 'ATLogDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ATLogDemo
+
+  pod 'ATLog', :path => '../../ATLog'
+  pod 'ATLog/ForCocoaLumberjack', :path => '../../ATLog'
+  pod 'ATLog/ForiPad', :path => '../../ATLog'
+  pod 'ATLog/ForiWatch', :path => '../../ATLog'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      
+    end
+  end
+end
+
+

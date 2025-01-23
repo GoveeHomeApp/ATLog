@@ -1,0 +1,61 @@
+{
+  "name": "ATLog",
+  "version": "0.1.0",
+  "summary": "A short description of ATLog.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yebiaoli/ATLog",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yebiaoli": "yebiao.li@ihoment.com"
+  },
+  "source": {
+    "git": "https://github.com/yebiaoli/ATLog.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0",
+    "watchos": "3.0"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "ATLog/Classes/Core/**/*"
+    },
+    {
+      "name": "ForCocoaLumberjack",
+      "dependencies": {
+        "ATLog/Core": [
+
+        ],
+        "CocoaLumberjack/Swift": [
+          "~> 3.7.2"
+        ]
+      },
+      "source_files": "ATLog/Classes/ForCocoaLumberjack/**/*"
+    },
+    {
+      "name": "ForiPad",
+      "dependencies": {
+        "ATLog/Core": [
+
+        ]
+      },
+      "source_files": "ATLog/Classes/ForiPad/**/*"
+    },
+    {
+      "name": "ForiWatch",
+      "dependencies": {
+        "ATLog/Core": [
+
+        ]
+      },
+      "source_files": "ATLog/Classes/ForiWatch/**/*"
+    }
+  ]
+}

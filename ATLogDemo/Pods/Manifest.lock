@@ -1,0 +1,36 @@
+PODS:
+  - ATLog (0.1.0):
+    - ATLog/Core (= 0.1.0)
+  - ATLog/Core (0.1.0)
+  - ATLog/ForCocoaLumberjack (0.1.0):
+    - ATLog/Core
+    - CocoaLumberjack/Swift (~> 3.7.2)
+  - ATLog/ForiPad (0.1.0):
+    - ATLog/Core
+  - ATLog/ForiWatch (0.1.0):
+    - ATLog/Core
+  - CocoaLumberjack/Core (3.7.4)
+  - CocoaLumberjack/Swift (3.7.4):
+    - CocoaLumberjack/Core
+
+DEPENDENCIES:
+  - ATLog (from `../../ATLog`)
+  - ATLog/ForCocoaLumberjack (from `../../ATLog`)
+  - ATLog/ForiPad (from `../../ATLog`)
+  - ATLog/ForiWatch (from `../../ATLog`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  ATLog:
+    :path: "../../ATLog"
+
+SPEC CHECKSUMS:
+  ATLog: 132b2eae4ca3252662aaf0cc5e5a14607be80e62
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+
+PODFILE CHECKSUM: fdbb84ba0b2e13bc56f71f213c48d509831cffbb
+
+COCOAPODS: 1.14.3
