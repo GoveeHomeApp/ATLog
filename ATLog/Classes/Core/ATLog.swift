@@ -93,7 +93,7 @@ final public class ATLogOC:NSObject {
 }
 
 final public class ATLog {
-    #if DEBUG
+    #if DEBUG || PDA || PRE || ADHOC
     public static var level:ATLogLevel = .debug {
         didSet {
             _ATLogService.logLevelDelegate?.logLevelChange(level: level)
