@@ -28,18 +28,18 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/yebiaoli/ATLog.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '11.0'
-  s.watchos.deployment_target = '3.0'
+  s.ios.deployment_target = '13.0'
+  s.watchos.deployment_target = '7.0'
 
   s.default_subspecs = ['Core']
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'ATLog/Classes/Core/**/*'
+    ss.dependency 'CocoaLumberjack/Swift'
   end
 
   s.subspec 'ForCocoaLumberjack' do |ss|
     ss.dependency 'ATLog/Core'
-    ss.dependency 'CocoaLumberjack/Swift', '~> 3.7.2'
     ss.source_files ='ATLog/Classes/ForCocoaLumberjack/**/*'
   end
 
